@@ -6,7 +6,6 @@ import React from "react";
 
 const SocialLogin = () => {
   const params = useSearchParams();
-
   const socialLoginAction = handleSocialLogin.bind(
     null,
     params.get("callbackUrl")?.toString() || ""

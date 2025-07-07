@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import SocialLogin from "./SocialLogin";
 import { Metadata } from "next";
 
@@ -11,7 +11,9 @@ const LoginPage = async () => {
   return (
     <div className="mt-20">
       <div className=" flex justify-center items-center">
-        <SocialLogin />
+        <Suspense>
+          <SocialLogin />
+        </Suspense>
       </div>
     </div>
   );
