@@ -57,7 +57,7 @@ npm install
 ```env
 AUTH_GOOGLE_ID= google auth id
 AUTH_GOOGLE_SECRET= google auth secret
-SECRET= random secret string
+AUTH_SECRET= random secret string
 ```
 
 **Start the app**
