@@ -24,7 +24,7 @@ export default function RootLayout({
         className={`${ibmPlex.className} antialiased lg:max-w-[100rem] lg:mx-auto mx-2 min-h-screen bg-[rgb(0,0,18)] text-white lg:ml-32 lg:mr-32 `}
       >
         <Navbar />
-        <div className="my-10">{children}</div>
+        <div className="py-16">{children}</div>
       </body>
     </html>
   );

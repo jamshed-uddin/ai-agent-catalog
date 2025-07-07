@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center gap-5">
+    <div className="mt-20 w-full flex flex-col justify-center items-center gap-5">
       <div className="flex flex-col items-center text-4xl lg:text-6xl font-medium">
         <h1>AI Agents Index:</h1>
         <h1>Discover your next</h1>
