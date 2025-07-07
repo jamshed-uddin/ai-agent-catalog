@@ -1,11 +1,16 @@
 "use client";
 import { handleSocialLogin } from "@/actions";
 import { Button } from "@/components/ui/button";
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 const SocialLogin = () => {
-  const callbackUrl = "";
-  const socialLoginAction = handleSocialLogin.bind(null, callbackUrl);
+  const params = useSearchParams();
+
+  const socialLoginAction = handleSocialLogin.bind(
+    null,
+    params.get("callbackUrl")?.toString() || ""
+  );
   return (
     <div>
       <form action={socialLoginAction}>

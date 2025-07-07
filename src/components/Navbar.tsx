@@ -8,15 +8,15 @@ import SignOutButton from "./SignOutButton";
 const Navbar = async () => {
   const session = await auth();
   const user = session?.user;
-  console.log(user);
+
   return (
-    <nav className="py-2 fixed left-2 lg:left-32 right-2 lg:right-32">
+    <nav className="py-2 fixed left-2 lg:left-32 right-2 lg:right-32 bg-[rgb(0,0,18)] z-20">
       <ul className="flex items-center ">
         <li className="flex-1 text-lg lg:text-xl font-semibold">
           <Link href={"/"}>AI Agent Index</Link>
         </li>
         <li className="text-sm lg:text-base">
-          <Link href={"/"}>Agents</Link>
+          <Link href={"/agents"}>Agents</Link>
         </li>
         <li className="ml-4">
           {!user ? (

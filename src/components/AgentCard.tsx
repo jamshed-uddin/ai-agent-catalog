@@ -14,6 +14,7 @@ import {
   ScaleIcon,
   ChatBubbleLeftRightIcon,
 } from "@heroicons/react/24/outline";
+
 const pricingModelBadge = {
   "Free Tier": "bg-[#8cf04833] border border-green-500 text-green-600",
   Subscription: "bg-[#19a4e233] border border-blue-500 text-blue-800",
@@ -34,7 +35,7 @@ const categoryIcons: Record<string, JSX.Element> = {
 const AgentCard = ({ agent }: { agent: AgentType }) => {
   const { name, description, category, pricingModel, status } = agent;
   return (
-    <Card className="p-2.5 border border-gray-800 shadow-none cursor-pointer hover:scale-[102%] hover:bg-gray-900 transition-all duration-300 gap-0">
+    <Card className="p-2.5 border border-gray-800 shadow-none cursor-pointer hover:scale-[102%] hover:bg-gray-900 transition-all duration-300 gap-0 h-52">
       {/* icon */}
       <div className=" mb-2">
         {categoryIcons[agent.category] ?? (

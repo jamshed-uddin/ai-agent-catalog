@@ -30,14 +30,12 @@ const FilterAndSearch = () => {
     }
 
     router.replace(`/agents?${params.toString()}`);
-    console.log(name, value);
   };
 
   const onSearchBarChange = useDebouncedCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
       const params = new URLSearchParams(searchParams);
       const { value } = e.target;
-      console.log(value);
 
       if (!value.trim()) {
         params.delete("search");
