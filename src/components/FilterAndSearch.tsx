@@ -55,9 +55,9 @@ const FilterAndSearch = () => {
 
     params.delete("status");
     params.delete("category");
-    params.delete("priceMode");
+    params.delete("pricingMode");
 
-    router.replace(`/agents?${params.toString}`);
+    router.replace(`/agents?${params.toString()}`);
   };
 
   return (
@@ -120,16 +120,16 @@ const FilterAndSearch = () => {
           </SelectContent>
         </Select>
         <Select
-          name="priceModel"
-          onValueChange={(value) => onFilterChange("priceModel", value)}
-          value={searchParams.get("priceModel") || " "}
+          name="pricingModel"
+          onValueChange={(value) => onFilterChange("pricingModel", value)}
+          value={searchParams.get("pricingModel") || " "}
         >
           <SelectTrigger className="w-fit rounded-xl">
             <SelectValue placeholder="Price model" />
           </SelectTrigger>
           <SelectContent className="bg-black rounded-xl">
             <SelectGroup>
-              <SelectItem value=" ">Price model</SelectItem>
+              <SelectItem value=" ">Pricing model</SelectItem>
               <SelectItem value="Free-Tier">Free-Tier</SelectItem>
               <SelectItem value="Subscription">Subscription</SelectItem>
               <SelectItem value="Per-Use">Per-Use</SelectItem>
