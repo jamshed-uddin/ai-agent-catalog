@@ -5,7 +5,7 @@ const authRoutes = ["/login"];
 const privateRoutes = ["/agents"];
 
 export async function middleware(req: NextRequest) {
-  const token = await getToken({ req, secret: process.env.SECRET });
+  const token = await getToken({ req, secret: process.env.AUTH_SECRET });
   const isAuthenticated = !!token;
   const { nextUrl } = req;
   const pathname = nextUrl.pathname;
