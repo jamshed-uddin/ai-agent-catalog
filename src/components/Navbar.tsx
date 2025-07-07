@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <nav className="py-2 fixed left-2 lg:left-32 right-2 lg:right-32">
       <ul className="flex items-center ">
-        <li className="flex-1 text-xl font-semibold">
+        <li className="flex-1 text-lg lg:text-xl font-semibold">
           <Link href={"/"}>AI Agent Index</Link>
         </li>
-        <li>
+        <li className="text-sm lg:text-base">
           <Link href={"/"}>Agents</Link>
         </li>
         <li className="ml-4">
