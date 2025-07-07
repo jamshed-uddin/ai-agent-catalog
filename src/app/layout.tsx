@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const ibmPlex = IBM_Plex_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${ibmPlex.className} antialiased lg:max-w-[100rem] lg:mx-auto mx-2 min-h-screen bg-[rgb(0,0,18)] text-white lg:ml-32 lg:mr-32 `}
       >
+        <Navbar />
         <div className="my-10">{children}</div>
       </body>
     </html>
