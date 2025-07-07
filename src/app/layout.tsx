@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlex.className} antialiased lg:max-w-[100rem] lg:mx-auto mx-2 min-h-screen bg-slate-100 text-slate-800 lg:ml-32 lg:mr-32 `}
+        className={`${ibmPlex.className} antialiased lg:max-w-[100rem] lg:mx-auto mx-2 min-h-screen bg-[rgb(0,0,18)] text-white lg:ml-32 lg:mr-32 `}
       >
-        {children}
+        <div className="my-10">{children}</div>
       </body>
     </html>
   );
